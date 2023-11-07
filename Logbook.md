@@ -14,12 +14,15 @@ The counter module used in this design has an additional output that the counter
 This is the ```incr``` signal, an 8-bit value which defines the increment with which the counter counts.
 
 I started by modifying the ```counter.cv``` module made in lab 1 to include this functionality as shown:
-![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/a48db2d3-1803-4359-be6e-199a40018a5c)
+![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/e07388ce-bbc6-4cb4-a34b-dedaea423990)
+
 
 The only difficult part of this process was modifying the mechanism through which the enable line works, which required the addition of an if/else statement in the always block.
 
 Next, I defined the top-level module ```sinegen.sv``` to connect ```rom.sv``` and ```counter.sv```, the code for this can be seen below:
-![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/deaf77b6-0272-447c-9cfc-7b552233df94)
+![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/caf5591c-a202-4eb9-bc01-257de282e52e)
+I decided to pass the ```ADDRESS_WIDTH``` into the counter module as a parameter, to ensure consistency throughout the module.
+
 
 Then, I created the testbench file for my module, entitled ```sinegen_tb.cpp```, at the moment it is very simple, just plotting the value of the module's output to Vbuddy.
 ![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/b0921792-9f34-4b77-9559-3c3ffd4d4f5e)
