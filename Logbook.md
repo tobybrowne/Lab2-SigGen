@@ -7,7 +7,8 @@ My code for this module can be seen below:
 
 Next I need to use this initialized ROM module to create a module that iterates through the values of the sine wave.
 This can be done by linking the ROM module, with a counter module, as shown below:
-![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/79cdd2bd-84c8-4102-93e1-1d304732f404)
+![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/5efc5313-49b1-47d1-8bcc-e1e3469d3284)
+
 
 The counter module used in this design has an additional output that the counter designed in Lab 1 does not have.
 This is the ```incr``` signal, an 8-bit value which defines the increment with which the counter counts.
@@ -56,6 +57,31 @@ Shown below is a photo of Vbuddy simulating this module. As you can see, the rot
 ## Task 3
 The aim of this task is to capture data from Vbuddy's microphone and write it to a RAM module. At the same time, the module should be reading these values back from memory at an offset determined by the rotary encoder.
 Both the read and write data should be plotted.
+
+First I need to create a 512x8 bit dual-port RAM module, this didn't require too many changes from the 256x8 bit dual-port ROM module.
+Since I have parameterized this module, I didn't change the default ```ADDRESS_WIDTH``` value, and decided instead to specify this in the top-level module. This meant I simply had to modify the code in the always block to allow for writing functinality.
+The new module ```dualram.sv``` can be seen below:
+![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/a311eb44-377a-46bd-aea6-de6d801f5a9e)
+
+I then wrote a new top-level module called ```sigdelay.sv```, only minor modifications were required from the previous top-level module.
+The effective ```ADDRESS_WIDTH``` and ```DATA_WIDTH``` are defined here and passed to the ```counter``` and ```dualram``` modules as parameters - this ensures consistency throughout the module.
+This module can be seen below:
+![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/a32829a5-c8b3-4997-adde-cd57a1e73c42)
+
+Something about the testbench (need to sort out buffer issues).
+
+Shown below is an image of Vbuddy simulating this module:
+![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/7df269c5-e9a9-4a65-aba8-0c272aa2d6be)
+As you can see, each spike in the microphones measured audio is echoed, this echoing plot is the offsetted reading signal.
+
+
+
+
+
+
+
+
+
 
 
 
