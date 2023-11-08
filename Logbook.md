@@ -24,8 +24,8 @@ I decided to pass the ```ADDRESS_WIDTH``` and ```DATA_WIDTH``` into the two sub-
 
 
 Then, I created the testbench file for my module, entitled ```sinegen_tb.cpp```, at the moment it is very simple, just plotting the value of the module's output to Vbuddy.\
-<img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/b0921792-9f34-4b77-9559-3c3ffd4d4f5e" width="400">
-\I can then create a new shell script to build my new project:
+<img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/b0921792-9f34-4b77-9559-3c3ffd4d4f5e" width="400">\
+I can then create a new shell script to build my new project:\
 <img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/23212131-8731-4daf-9207-7cbbfbd99c5c" width="500">
 
 Simulating my module, yielded the expected results, as shown below:
@@ -34,10 +34,10 @@ Simulating my module, yielded the expected results, as shown below:
 ### Challenge
 The challenge for this task is to allow the rotary encoder of Vbuddy to change the frequency of the sine wave displayed.
 The inclusion of the ```incr``` input makes this very easy.
-The following line:
-![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/d2e2abab-5b62-48bd-83b5-a97a0d6975d8)
-Allows the rotary encoder to specify the address gap between ROM reads, essentially specifying the sine waves frequency, allowing for the generation of higher frequency waves as shown below:
-![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/1dc6f02f-001b-4856-a6d1-7cc5b288b891)
+The following line:\
+<img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/d2e2abab-5b62-48bd-83b5-a97a0d6975d8" width="200">\
+Allows the rotary encoder to specify the address gap between ROM reads, essentially specifying the sine waves frequency, allowing for the generation of higher frequency waves as shown below:\
+<img src="[https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/d2e2abab-5b62-48bd-83b5-a97a0d6975d8](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/1dc6f02f-001b-4856-a6d1-7cc5b288b891)" width="400">\
 
 ## Task 2
 The goal of this task is to generate two sinusoids, for which the phase offset is determined by the value of the rotary encoder.
