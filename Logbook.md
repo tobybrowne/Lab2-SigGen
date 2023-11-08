@@ -13,7 +13,7 @@ The counter module used in this design has an additional output that the counter
 This is the ```incr``` signal, an 8-bit value which defines the increment with which the counter counts.
 
 I started by modifying the ```counter.cv``` module made in lab 1 to include this functionality as shown:
-![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/e07388ce-bbc6-4cb4-a34b-dedaea423990)
+<img src = "https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/e07388ce-bbc6-4cb4-a34b-dedaea423990" width="400">
 
 
 The only difficult part of this process was modifying the mechanism through which the enable line works, which required the addition of an if/else statement in the always block.
