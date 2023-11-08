@@ -37,7 +37,7 @@ The inclusion of the ```incr``` input makes this very easy.
 The following line:\
 <img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/d2e2abab-5b62-48bd-83b5-a97a0d6975d8" width="200">\
 Allows the rotary encoder to specify the address gap between ROM reads, essentially specifying the sine waves frequency, allowing for the generation of higher frequency waves as shown below:\
-<img src="[https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/d2e2abab-5b62-48bd-83b5-a97a0d6975d8](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/1dc6f02f-001b-4856-a6d1-7cc5b288b891)" width="400">\
+<img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/1dc6f02f-001b-4856-a6d1-7cc5b288b891" width="400">\
 
 ## Task 2
 The goal of this task is to generate two sinusoids, for which the phase offset is determined by the value of the rotary encoder.
