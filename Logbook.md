@@ -18,13 +18,13 @@ I started by modifying the ```counter.cv``` module made in lab 1 to include this
 
 The only difficult part of this process was modifying the mechanism through which the enable line works, which required the addition of an if/else statement in the always block.
 
-Next, I defined the top-level module ```sinegen.sv``` to connect ```rom.sv``` and ```counter.sv```, the code for this can be seen below:
-<img src = "https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/e5fba24e-2189-4165-ade9-7071271b0d8d" width="400">
+Next, I defined the top-level module ```sinegen.sv``` to connect ```rom.sv``` and ```counter.sv```, the code for this can be seen below:\
+<img src = "https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/e5fba24e-2189-4165-ade9-7071271b0d8d" width="400">\
 I decided to pass the ```ADDRESS_WIDTH``` and ```DATA_WIDTH``` into the two sub-modules as parameters, to ensure consistency throughout the module.
 
 
-Then, I created the testbench file for my module, entitled ```sinegen_tb.cpp```, at the moment it is very simple, just plotting the value of the module's output to Vbuddy.
-<img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/b0921792-9f34-4b77-9559-3c3ffd4d4f5e" width="400">
+Then, I created the testbench file for my module, entitled ```sinegen_tb.cpp```, at the moment it is very simple, just plotting the value of the module's output to Vbuddy.\
+<img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/b0921792-9f34-4b77-9559-3c3ffd4d4f5e" width="400">\
 
 I can then create a new shell script to build my new project:
 ![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/23212131-8731-4daf-9207-7cbbfbd99c5c)
