@@ -3,7 +3,7 @@
 ## Task 1
 The first step of this task is to create a 256x8 ROM module (256 locations of size 8 bits), this ROM module must be initialized with the sine wave values stored in the ```sinerom.mem``` file.
 My code for this module can be seen below:
-![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/2bc6c0da-f5a0-4a42-89c9-3e60c49c31a0)
+<img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/2bc6c0da-f5a0-4a42-89c9-3e60c49c31a0" wiidth"400">
 
 Next I need to use this initialized ROM module to create a module that iterates through the values of the sine wave.
 This can be done by linking the ROM module, with a counter module, as shown below:
