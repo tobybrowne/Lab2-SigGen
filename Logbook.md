@@ -26,7 +26,7 @@ I decided to pass the ```ADDRESS_WIDTH``` and ```DATA_WIDTH``` into the two sub-
 
 
 Then, I created the testbench file for my module, entitled ```sinegen_tb.cpp```, at the moment it is very simple, just plotting the value of the module's output to Vbuddy.
-![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/b0921792-9f34-4b77-9559-3c3ffd4d4f5e)
+<img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/b0921792-9f34-4b77-9559-3c3ffd4d4f5e" width="400">
 
 I can then create a new shell script to build my new project:
 ![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/23212131-8731-4daf-9207-7cbbfbd99c5c)
