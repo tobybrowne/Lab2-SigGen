@@ -72,7 +72,7 @@ This module can be seen below:\
 Something about the testbench (need to sort out buffer issues).
 
 Shown below is an image of Vbuddy simulating this module:\
-<img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/7df269c5-e9a9-4a65-aba8-0c272aa2d6be" width="400">\
+<img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/2ad0470d-e2dc-4d5a-b3bd-339f2c6c00c8" width="400">\
 As you can see, each spike in the microphones measured audio is echoed, this echoing plot is the offsetted reading signal.
 
 
