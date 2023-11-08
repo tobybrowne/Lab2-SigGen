@@ -7,9 +7,7 @@ My code for this module can be seen below:
 
 Next I need to use this initialized ROM module to create a module that iterates through the values of the sine wave.
 This can be done by linking the ROM module, with a counter module, as shown below:
-![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/ebf66d2e-f1ce-4803-9853-e99e53227b97)
-
-
+<img src = "https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/ebf66d2e-f1ce-4803-9853-e99e53227b97" width="500">
 
 The counter module used in this design has an additional output that the counter designed in Lab 1 does not have.
 This is the ```incr``` signal, an 8-bit value which defines the increment with which the counter counts.
