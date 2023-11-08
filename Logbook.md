@@ -19,7 +19,7 @@ I started by modifying the ```counter.cv``` module made in lab 1 to include this
 The only difficult part of this process was modifying the mechanism through which the enable line works, which required the addition of an if/else statement in the always block.
 
 Next, I defined the top-level module ```sinegen.sv``` to connect ```rom.sv``` and ```counter.sv```, the code for this can be seen below:\
-<img src = "https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/e5fba24e-2189-4165-ade9-7071271b0d8d" width="400">\
+<img src = "https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/e5fba24e-2189-4165-ade9-7071271b0d8d" width="300">\
 I decided to pass the ```ADDRESS_WIDTH``` and ```DATA_WIDTH``` into the two sub-modules as parameters, to ensure consistency throughout the module.
 
 
