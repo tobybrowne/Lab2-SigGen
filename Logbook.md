@@ -29,7 +29,7 @@ I can then create a new shell script to build my new project:\
 <img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/23212131-8731-4daf-9207-7cbbfbd99c5c" width="500">
 
 Simulating my module, yielded the expected results, as shown below:
-<img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/8215a0d5-113f-4bf8-aa32-107d3857f388" width="500">
+<img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/8215a0d5-113f-4bf8-aa32-107d3857f388" width="400">
 
 ### Challenge
 The challenge for this task is to allow the rotary encoder of Vbuddy to change the frequency of the sine wave displayed.
@@ -42,16 +42,15 @@ Allows the rotary encoder to specify the address gap between ROM reads, essentia
 ## Task 2
 The goal of this task is to generate two sinusoids, for which the phase offset is determined by the value of the rotary encoder.
 
-I started by making a "dual ROM module", which will allow me to read from two different addresses simultaneously, the code for this module, entitled ```dualrom.sv``` is shown below:
-![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/00e815e9-5079-451a-8d7a-c194cd75ed4a)
+I started by making a "dual ROM module", which will allow me to read from two different addresses simultaneously, the code for this module, entitled ```dualrom.sv``` is shown below:\
+<img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/00e815e9-5079-451a-8d7a-c194cd75ed4a" width="400">\
 
 Next, I modified the top-level ```sinegen.sv``` module by adding a new input signal called ```offset```, new outputs ```out1``` and ```out2```, as well as changing the internal circuitry for the desired offset behaiviour.
-This module can be seen below:
-![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/4bd3b9b4-786d-436c-9a2d-2d06f8729b25)
-
+This module can be seen below:\
+<img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/4bd3b9b4-786d-436c-9a2d-2d06f8729b25" width="400">\
 
 Then I modified the testbench, so that both of the modules' outputs would be plotted and so that the value of the ```offset``` input was tied to the rotary encoder. The testbench can be seen below:
-![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/de041ad8-8319-4a54-8a5a-9786b99308d0)
+<img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/de041ad8-8319-4a54-8a5a-9786b99308d0" width="400">\
 
 Shown below is a photo of Vbuddy simulating this module. As you can see, the rotary encoder is set to a value of 64, which is giving us a wave offset of 90 degrees, as expected:
 ![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/17875a0e-9c5f-4d71-848e-2767f24d2443)
