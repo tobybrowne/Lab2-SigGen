@@ -28,7 +28,7 @@ Then, I created the testbench file for my module, entitled ```sinegen_tb.cpp```,
 I can then create a new shell script to build my new project:\
 <img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/23212131-8731-4daf-9207-7cbbfbd99c5c" width="500">
 
-Simulating my module, yielded the expected results, as shown below:
+Simulating my module, yielded the expected results, as shown below:\
 <img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/8215a0d5-113f-4bf8-aa32-107d3857f388" width="400">
 
 ### Challenge
