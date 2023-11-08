@@ -52,8 +52,8 @@ This module can be seen below:\
 Then I modified the testbench, so that both of the modules' outputs would be plotted and so that the value of the ```offset``` input was tied to the rotary encoder. The testbench can be seen below:
 <img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/de041ad8-8319-4a54-8a5a-9786b99308d0" width="400">\
 
-Shown below is a photo of Vbuddy simulating this module. As you can see, the rotary encoder is set to a value of 64, which is giving us a wave offset of 90 degrees, as expected:
-![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/17875a0e-9c5f-4d71-848e-2767f24d2443)
+Shown below is a photo of Vbuddy simulating this module. As you can see, the rotary encoder is set to a value of 64, which is giving us a wave offset of 90 degrees, as expected:\
+<img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/17875a0e-9c5f-4d71-848e-2767f24d2443" width="400">\
 
 ## Task 3
 The aim of this task is to capture data from Vbuddy's microphone and write it to a RAM module. At the same time, the module should be reading these values back from memory at an offset determined by the rotary encoder.
@@ -61,18 +61,18 @@ Both the read and write data should be plotted.
 
 First I need to create a 512x8 bit dual-port RAM module, this didn't require too many changes from the 256x8 bit dual-port ROM module.
 Since I have parameterized this module, I didn't change the default ```ADDRESS_WIDTH``` value, and decided instead to specify this in the top-level module. This meant I simply had to modify the code in the always block to allow for writing functinality.
-The new module ```dualram.sv``` can be seen below:
-![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/a311eb44-377a-46bd-aea6-de6d801f5a9e)
+The new module ```dualram.sv``` can be seen below:\
+<img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/a311eb44-377a-46bd-aea6-de6d801f5a9e" width="400">\
 
 I then wrote a new top-level module called ```sigdelay.sv```, only minor modifications were required from the previous top-level module.
 The effective ```ADDRESS_WIDTH``` and ```DATA_WIDTH``` are defined here and passed to the ```counter``` and ```dualram``` modules as parameters - this ensures consistency throughout the module.
-This module can be seen below:
-![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/a32829a5-c8b3-4997-adde-cd57a1e73c42)
+This module can be seen below:\
+<img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/a32829a5-c8b3-4997-adde-cd57a1e73c42" width="400">\
 
 Something about the testbench (need to sort out buffer issues).
 
-Shown below is an image of Vbuddy simulating this module:
-![image](https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/7df269c5-e9a9-4a65-aba8-0c272aa2d6be)
+Shown below is an image of Vbuddy simulating this module:\
+<img src="https://github.com/tobybrowne/Lab2-SigGen/assets/135706062/7df269c5-e9a9-4a65-aba8-0c272aa2d6be" width="400">\
 As you can see, each spike in the microphones measured audio is echoed, this echoing plot is the offsetted reading signal.
 
 
